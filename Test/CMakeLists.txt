@@ -3,6 +3,7 @@ project(DianaThreadPoolTest)
 
 include_directories(../ThreadPool)
 include_directories(../MultiplePool)
+include_directories(../Worksteal)
 include_directories(../Utilities)
 
 add_executable(DianaThreadPoolTest
@@ -11,5 +12,6 @@ add_executable(DianaThreadPoolTest
         ../ThreadPool/ThreadPool.hpp
         ../ThreadPool/ThreadPoolWithSafeQueue.hpp
         ../MultiplePool/MultiplePool.hpp
+        ../Worksteal/Worksteal.hpp
         ../Utilities/SafeQueue.hpp
         ../Utilities/ScopedTimer.hpp)
